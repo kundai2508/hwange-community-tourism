@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | Hwange Community Tourism</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav">
+  <a class="logo" href="index.html">🐘 Hwange Community Tourism</a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="marketplace.html">Marketplace</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="booking.html">Book</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<section class="page-title"><h1>Visitor Reviews</h1><p>Sample reviews for the project. Add your own below.</p></section>
+
+<main>
+  <div id="reviewList">
+    <div class="review"><div class="stars">★★★★★</div><p>“Our host cooked the best meal of the trip and taught us a lot about village life.”</p><strong>— Sample Visitor A</strong></div>
+    <div class="review"><div class="stars">★★★★★</div><p>“The guide spotted tracks we would never have noticed. Highly recommended.”</p><strong>— Sample Visitor B</strong></div>
+    <div class="review"><div class="stars">★★★★☆</div><p>“Lovely cultural evening. Bring a torch and warm clothes for the night.”</p><strong>— Sample Visitor C</strong></div>
+  </div>
+
+  <h2>Leave a Review</h2>
+  <form id="reviewForm">
+    <label for="rname">Your name</label>
+    <input type="text" id="rname" required>
+    <label for="rating">Rating</label>
+    <select id="rating">
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Very good</option>
+      <option value="3">3 - Good</option>
+      <option value="2">2 - Fair</option>
+      <option value="1">1 - Poor</option>
+    </select>
+    <label for="rtext">Your review</label>
+    <textarea id="rtext" rows="4" required></textarea>
+    <br><br>
+    <button class="btn" type="submit">Post Review</button>
+  </form>
+</main>
+
+<footer><p>&copy; 2026 Hwange Community Tourism Portal. Student project for the Internet and Web module.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

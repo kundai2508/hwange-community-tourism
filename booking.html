@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book | Hwange Community Tourism</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav">
+  <a class="logo" href="index.html">🐘 Hwange Community Tourism</a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="marketplace.html">Marketplace</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="booking.html">Book</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<section class="page-title"><h1>Book or Enquire</h1><p>Tell us what you would like to do and when</p></section>
+
+<main>
+  <form id="bookingForm" novalidate>
+    <label for="name">Full name</label>
+    <input type="text" id="name" placeholder="Your name">
+    <div class="error" id="nameErr"></div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com">
+    <div class="error" id="emailErr"></div>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" placeholder="+263 ...">
+    <div class="error" id="phoneErr"></div>
+
+    <label for="experience">Experience</label>
+    <select id="experience">
+      <option>Homestay</option>
+      <option>Campsite</option>
+      <option>Bush Walk</option>
+      <option>Birdwatching</option>
+      <option>Cultural Evening</option>
+      <option>Cooking Class</option>
+    </select>
+
+    <label for="date">Preferred date</label>
+    <input type="date" id="date">
+    <div class="error" id="dateErr"></div>
+
+    <label for="guests">Number of guests</label>
+    <input type="number" id="guests" value="1" min="1" max="20">
+    <div class="error" id="guestsErr"></div>
+
+    <label for="notes">Special requests</label>
+    <textarea id="notes" rows="3" placeholder="Dietary needs, accessibility, questions..."></textarea>
+
+    <br><br>
+    <button class="btn" type="submit">Send Booking Request</button>
+    <div class="success" id="bookingSuccess">Thank you! Your request has been received. A host will contact you to confirm.</div>
+  </form>
+</main>
+
+<footer><p>&copy; 2026 Hwange Community Tourism Portal. Student project for the Internet and Web module.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
